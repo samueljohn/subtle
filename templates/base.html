@@ -56,11 +56,7 @@
                 <div class="social">
                         <h2>social</h2>
                         <ul>
-                            <li><a href="{{ FEED_DOMAIN }}/{{ FEED }}" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            {% if FEED_RSS %}
-                            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate">rss feed</a></li>
-                            {% endif %}
-
+                            
                         {% for name, link in SOCIAL %}
                             <li><a href="{{ link }}">{{ name }}</a></li>
                         {% endfor %}
