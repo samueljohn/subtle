@@ -12,14 +12,15 @@
 @import url("pygment.css");
 @import url("typogrify.css");
 @import url(http://fonts.googleapis.com/css?family=Lobster);
-@import url(http://fonts.googleapis.com/css?family=Philosopher);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 
 
 /***** Global *****/
 /* Body */
 body {
     background: url("wavecut.png");
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 14px ;
     line-height: 1.429;
     margin: 0;
     padding: 0;
@@ -87,8 +88,8 @@ ol {
 
 .post-info {
     float:right;
-    margin:10px;
-    padding:5px;
+    margin:5px;
+    padding:9px;
 }
 
 .post-info p{
