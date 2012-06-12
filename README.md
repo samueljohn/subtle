@@ -145,3 +145,5 @@ You're done!
 I have not tested RSS and Atom feeds as I do not use these services, I think I might have removed the support for them so keep that in mind and you might be able to get the needed code on the notmyidea theme.
 
 
+
+@asselinpaul
