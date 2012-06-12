@@ -1,6 +1,8 @@
 #Subtle
 ###A pelican theme
 
+![screenshot](https://dl.dropbox.com/u/6712319/screenshot-6.png)
+
 This is subtle, a theme for the [Pelican static site generator](http://pelican.notmyidea.org/en/2.8/index.html).
 It is adapted from the [notmyidea](https://github.com/ametaireau/notmyidea) default theme. 
 
@@ -13,7 +15,7 @@ Apart from aesthetic changes, this also adds a different set of more 'classy' so
 If you wish to add a favicon to your website (and I believe that you should), then you should add a 16x16 icon 'favicon.ico'
 file in your output directory.
 
-*PS: I've made this documentation quite easy to follow (I hope!), if you know CSS, some parts might be very simplified (I know they are other ways to change the font <smiley face> )!*
+*PS: I've made this documentation quite easy to follow (I hope!), computer geeks might find it too 'simplified' but hey, it's well documented*
 
 Because this is 'based' on notmyidea (the theme), this supports all of these settings (which you would add to the pelican.conf.py file).
 ```
@@ -103,19 +105,43 @@ font-family: 'Lobster', cursive;
 
 That's it, you're done. For the font that is used for the articles, do the same thing with line 15 and 22. 
 
+##Social Icons
+I've only implemented icons that I used but it's super easy to add more and best of all, the icons you are looking for are most likely already included! 
+
+First, take a look in the main.css file. Towards line 315, you can see the social icon declaration. It looks like this:
+```
+.social a[href*='twitter.com'] {background-image: url('../images/icons/twitter_alt.png');
+		background-size: 16px 16px;  }
+```
+Check to see if the one you want isn't implemented, if not, let's continue.
+
+* open images/icon
+* look for the icon you want in here or add it
+* note down it's name (e.g: wikipedia.png)
+* go into the main.css file and go towards line 315, you should see the icons declaration.
+* copy and paste this template there:
+```
+.social a[href*='url_of_site'] {background-image: url('../images/icons/name_of_icon');
+		background-size: 16px 16px; }
+```
+Change *url_of_site* with the url of the service for which you are adding an icon (e.g: wikipedia.com).
+*Do not include 'www.'*
+
+Change *name_of_icon* with the name of the icon you got in step 2 (with it's extension). In our case that is wikipedia.png .
+If you icon is located somewhere else, you can also change the path but you have to make sure that I'll be included with your css.
+
+* go into your pelican.conf.py file and add your social 'link' there(making sure that you use the correct service name and url)
+For example:
+```
+('github', 'http://github.com/thisisalongdocumentation'),
+```
+
+You're done!
+
+![icons](https://dl.dropbox.com/u/6712319/screenshot-5.png)
+*Yeah, that is a lot of icons.*
+
 ##Notes 
 I have not tested RSS and Atom feeds as I do not use these services, I think I might have removed the support for them so keep that in mind and you might be able to get the needed code on the notmyidea theme.
-
-
-
-
-
-
-
-How to add social account
-
-GoSquared
-
-favicon
 
 
