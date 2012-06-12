@@ -1,5 +1,5 @@
 #Subtle
-##A pelican theme
+###A pelican theme
 
 This is subtle, a theme for the [Pelican static site generator](http://pelican.notmyidea.org/en/2.8/index.html).
 It is adapted from the [notmyidea](https://github.com/ametaireau/notmyidea) default theme. 
