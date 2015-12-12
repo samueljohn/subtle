@@ -90,6 +90,7 @@ ol {
     float:right;
     margin:5px;
     padding:9px;
+    max-width: 25%;
 }
 
 .post-info p{
